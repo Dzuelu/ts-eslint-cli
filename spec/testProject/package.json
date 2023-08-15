@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@types/eslint": "8.x",
+    "eslint": "8.x",
+    "ts-eslint-cli": "file:../../",
+    "typescript": "5.1.x"
+  },
+  "license": "UNLICENSED",
+  "name": "test-project",
+  "scripts": {
+    "lint": "ts-eslint-cli . --ext .ts"
+  },
+  "version": "0.0.0"
+}

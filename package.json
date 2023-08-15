@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "ts-eslint-cli": "./dist/bin/script.js"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.x",
+    "@types/jest": "29.x",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "5.x",
+    "@typescript-eslint/parser": "5.x",
+    "eslint": "8.x",
+    "eslint-config-airbnb-typescript": "17.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-node": "11.x",
+    "eslint-plugin-prettier": "4.x",
+    "eslint-plugin-sort-keys-fix": "1.x",
+    "jest": "29.x",
+    "prettier": "2.x",
+    "prettier-eslint": "15.x",
+    "ts-jest": "29.x",
+    "typescript": "5.1.x"
+  },
+  "main": "dist/src",
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
+  "name": "ts-eslint-cli",
+  "peerDependencies": {
+    "eslint": "8.x",
+    "typescript": "5.x"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "e2e": "yarn build && yarn test",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
+  },
+  "version": "1.0.0"
+}
