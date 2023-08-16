@@ -4,6 +4,7 @@
 
 # Don't ignore
 !.git*
+!.npmignore
 !*.js
 !*.json
 !*.md
