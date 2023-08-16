@@ -32,8 +32,8 @@ describe('testProject', () => {
     await runCommand('yarn install');
 
     await expect(runCommand('yarn lint')).resolves.toContain(
-      // The actual successful cli output with no lint issues from eslint
-      '\u001b[2K\u001b[1G\u001b[2m$ ts-eslint-cli . --ext .ts\u001b[22m\n'
+      // simplified successful cli output with no lint issues from eslint
+      'ts-eslint-cli . --ext .ts'
     );
 
     await cleanup();
