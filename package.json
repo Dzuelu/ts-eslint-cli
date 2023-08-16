@@ -1,7 +1,6 @@
 {
-  "bin": {
-    "ts-eslint-cli": "./dist/bin/script.js"
-  },
+  "bin": "./dist/bin/script.js",
+  "description": "A drop in solution to be able to use typescript with eslint config files.",
   "devDependencies": {
     "@types/eslint": "8.x",
     "@types/jest": "29.x",
