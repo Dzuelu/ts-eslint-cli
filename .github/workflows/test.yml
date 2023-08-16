@@ -1,0 +1,30 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: yarn install --frozen-lockfile
+        shell: bash
+      # run linter
+      - run: yarn lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: yarn install --frozen-lockfile
+        shell: bash
+      # run end to end tests (unit and "integration" test)
+      - run: yarn e2e
