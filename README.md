@@ -1,6 +1,7 @@
 # ts-eslint-cli
 A drop in solution to be able to use typescript with eslint config files.
 
+[![Version](https://img.shields.io/npm/v/ts-eslint-cli.svg)](https://www.npmjs.com/package/ts-eslint-cli)
 
 # Example
 `.eslint.ts`
